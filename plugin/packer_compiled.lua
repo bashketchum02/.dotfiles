@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -108,12 +114,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nvim-base16"] = {
-    config = { "\27LJ\2\nï\2\0\0\b\0\18\0+6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0)\2\0\0005\3\b\0B\0\3\0026\1\0\0009\1\6\0019\1\t\1)\3\0\0'\4\n\0\18\5\0\0B\1\4\0016\1\0\0009\1\6\0019\1\a\1)\3\0\0005\4\v\0B\1\3\0026\2\0\0009\2\6\0029\2\t\2)\4\0\0'\5\f\0005\6\14\0009\a\r\1=\a\r\0069\a\15\1=\a\15\0069\a\16\1=\a\16\0069\a\17\1=\a\17\6B\2\4\1K\0\1\0\fctermbg\fctermfg\abg\1\0\1\tbold\2\afg LspSignatureActiveParameter\1\0\1\tname\nPMenu\fComment\16nvim_set_hl\1\0\1\tname\fBoolean\16nvim_get_hl\bapi\tdark\15background\6o)colorscheme base16-gruvbox-dark-hard\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/nvim-base16",
-    url = "https://github.com/RRethy/nvim-base16"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -178,14 +178,24 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["yorumi.nvim"] = {
+    config = { "\27LJ\2\nÝ\2\0\0\b\0\18\0+6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0)\2\0\0005\3\b\0B\0\3\0026\1\0\0009\1\6\0019\1\t\1)\3\0\0'\4\n\0\18\5\0\0B\1\4\0016\1\0\0009\1\6\0019\1\a\1)\3\0\0005\4\v\0B\1\3\0026\2\0\0009\2\6\0029\2\t\2)\4\0\0'\5\f\0005\6\14\0009\a\r\1=\a\r\0069\a\15\1=\a\15\0069\a\16\1=\a\16\0069\a\17\1=\a\17\6B\2\4\1K\0\1\0\fctermbg\fctermfg\abg\1\0\1\tbold\2\afg LspSignatureActiveParameter\1\0\1\tname\nPMenu\fComment\16nvim_set_hl\1\0\1\tname\fBoolean\16nvim_get_hl\bapi\tdark\15background\6o\23colorscheme yorumi\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/apranto/.local/share/nvim/site/pack/packer/start/yorumi.nvim",
+    url = "https://github.com/yorumicolors/yorumi.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-base16
-time([[Config for nvim-base16]], true)
-try_loadstring("\27LJ\2\nï\2\0\0\b\0\18\0+6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0)\2\0\0005\3\b\0B\0\3\0026\1\0\0009\1\6\0019\1\t\1)\3\0\0'\4\n\0\18\5\0\0B\1\4\0016\1\0\0009\1\6\0019\1\a\1)\3\0\0005\4\v\0B\1\3\0026\2\0\0009\2\6\0029\2\t\2)\4\0\0'\5\f\0005\6\14\0009\a\r\1=\a\r\0069\a\15\1=\a\15\0069\a\16\1=\a\16\0069\a\17\1=\a\17\6B\2\4\1K\0\1\0\fctermbg\fctermfg\abg\1\0\1\tbold\2\afg LspSignatureActiveParameter\1\0\1\tname\nPMenu\fComment\16nvim_set_hl\1\0\1\tname\fBoolean\16nvim_get_hl\bapi\tdark\15background\6o)colorscheme base16-gruvbox-dark-hard\bcmd\bvim\0", "config", "nvim-base16")
-time([[Config for nvim-base16]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: yorumi.nvim
+time([[Config for yorumi.nvim]], true)
+try_loadstring("\27LJ\2\nÝ\2\0\0\b\0\18\0+6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0'\1\5\0=\1\4\0006\0\0\0009\0\6\0009\0\a\0)\2\0\0005\3\b\0B\0\3\0026\1\0\0009\1\6\0019\1\t\1)\3\0\0'\4\n\0\18\5\0\0B\1\4\0016\1\0\0009\1\6\0019\1\a\1)\3\0\0005\4\v\0B\1\3\0026\2\0\0009\2\6\0029\2\t\2)\4\0\0'\5\f\0005\6\14\0009\a\r\1=\a\r\0069\a\15\1=\a\15\0069\a\16\1=\a\16\0069\a\17\1=\a\17\6B\2\4\1K\0\1\0\fctermbg\fctermfg\abg\1\0\1\tbold\2\afg LspSignatureActiveParameter\1\0\1\tname\nPMenu\fComment\16nvim_set_hl\1\0\1\tname\fBoolean\16nvim_get_hl\bapi\tdark\15background\6o\23colorscheme yorumi\bcmd\bvim\0", "config", "yorumi.nvim")
+time([[Config for yorumi.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads

@@ -6,11 +6,16 @@ return require('packer').startup(function(use)
     use 'andweeb/presence.nvim'
     use {
         'christoomey/vim-tmux-navigator',
-        lazy = false
+        lazy = false,
     }
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        -- or                            , branch = '0.1.x',
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use {
@@ -49,10 +54,10 @@ return require('packer').startup(function(use)
     }
 
     use({
-        'RRethy/nvim-base16',
+        'yorumicolors/yorumi.nvim',
         lazy = false,
-        config = function() 
-            vim.cmd('colorscheme base16-gruvbox-dark-hard')
+        config = function()
+            vim.cmd('colorscheme yorumi')
             vim.o.background = 'dark'
 			-- XXX: hi Normal ctermbg=NONE
 			-- Make comments more prominent -- they are important.
